@@ -2,7 +2,7 @@
 
 @section('conteudo')
 <div>
-    <!-- Pokemon, temos que pegar eu sei... -->
+    <!-- Pokémon, temos que pegar eu sei... -->
     <h2>Pokemons</h2>
     <a href="/create">Criar Novo</a>
 </div>
