@@ -38,3 +38,10 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 ---
 
 Este README fornece uma visão geral das funcionalidades do sistema e orientações sobre como configurar e usar o projeto. Você pode adicionar mais detalhes sobre a instalação, configuração do ambiente PHP, entre outros aspectos, conforme necessário.
+## Autores
+
+- [@GregoryRodrigues](https://github.com/GregoryRFGMS)
+- [@ArthurSoares](https://github.com/Arthur-Soares-Dev)
+- [@Kai-Ofc](https://github.com/Kai-Ofc)
+- [@DaviBMiranda](https://github.com/DaviBMiranda)
+- [@Lucaswilsondev ](https://github.com/lucaswilsondev)
