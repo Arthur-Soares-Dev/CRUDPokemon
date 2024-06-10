@@ -7,9 +7,31 @@ use App\Models\Pokemon;
 
 class PokemonsController extends Controller
 {
-    public function index() {
-        $pokemons = Pokemon::get();
-        return view('index')->with('pokemons', $pokemons);
+    public function index(Request $request) {
+        $query = Pokemon::query();
+
+        // Pesquisa por nome
+        if ($request->has('search') && $request->search != '') {
+            $query->where('nome', 'like', '%' . $request->search . '%');
+        }
+
+        // Ordenação
+        if ($request->has('sort') && $request->sort != '') {
+            $sortFields = [
+                'tipo' => 'tipo',
+                'regiao' => 'regiao',
+            ];
+
+            if (array_key_exists($request->sort, $sortFields)) {
+                $query->orderBy($sortFields[$request->sort]);
+            }
+        } else {
+            $query->orderBy('created_at', 'desc'); // Ordenação padrão
+        }
+
+        $pokemons = $query->simplePaginate(10);
+
+        return view('index', compact('pokemons'));
     }
 
     public function create() {
@@ -50,5 +72,4 @@ class PokemonsController extends Controller
 
         return redirect('/');
     }
-
 }
