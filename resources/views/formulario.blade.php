@@ -6,7 +6,7 @@
         <!-- Pegá-los eu tentarei! -->
         Salvar Pokemon
     </h1>
-    <form class="form" action="/store" method="post">
+    <form class="form" action="/store" method="post" onsubmit="return validarForm()">
         @csrf
         <!--<p>-->
             <label class="labelForm" for="nome">Nome:</label>
@@ -91,4 +91,37 @@
         <!--</p>-->
     </form>
 </div>
+
+<script>
+        function validarForm(){
+            var nome = document.getElementById("nome").value;
+            var tipo = document.getElementById("tipo").value;
+            var fraqueza = document.getElementById("fraqueza").value;
+            var regiao = document.getElementById("regiao").value;
+            var geracao = document.getElementById("geracao").value;
+
+            var msgAlerta = "";
+
+            if (nome == "") {
+                msgAlerta += "Por favor, preencha o nome.\n";
+            }
+            if (tipo == "") {
+                msgAlerta += "Por favor, selecione um tipo.\n";
+            }
+            if (fraqueza == "") {
+                msgAlerta += "Por favor, selecione uma fraqueza.\n";
+            }
+            if (regiao == "") {
+                msgAlerta += "Por favor, selecione uma região.\n";
+            }
+            if (geracao == "") {
+                msgAlerta += "Por favor, selecione uma geração.\n";
+            }
+
+            if (msgAlerta != "") {
+                alert(msgAlerta);
+                return false;
+        }
+        return true;
+    </script>
 @endsection
