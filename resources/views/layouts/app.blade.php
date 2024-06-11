@@ -62,6 +62,10 @@
             transition: .3s;
         }
 
+        .table-container{
+            overflow-x: auto;
+        }
+
         .form{
             display:grid;
             justify-content:center;
