@@ -13,8 +13,10 @@
 
     <style>
         body{
-            margin:0;
-            padding:0;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
         }
 
         * {
@@ -22,16 +24,46 @@
         }
 
         .formBody{
-            width: 100%;
-            height: 100vh;
-            background-color:#c8cdc6;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
         }
 
         .formContainer{
-            display: grid;
-            align-items: center;
-            justify-content: center;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group select {
             width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
         }
 
         .divTitle{
@@ -44,22 +76,23 @@
             font-size:3rem;
         }
 
-        .buttonSalvar{
-            cursor: pointer;
-            width: 60%;
-            height: 5vh;
+        .buttonSalvar {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
             font-size: 1rem;
-            border-radius: 5px;
-            background-color: white;
-            border: .5px solid #000;
-            transition: .3s;
-            margin-top:5px;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #333;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            width: 100%;
         }
 
         .buttonSalvar:hover {
-            background-color:#1f3f42;
-            color:#c8cdc6;
-            transition: .3s;
+            background-color: #292929;
         }
 
         .table-container{
@@ -97,17 +130,6 @@
             font-size:1.3rem;
         }
 
-        #nome{
-            margin-bottom:5px;
-            font-size:1.2rem;
-            transition:.3s;
-        }
-
-        #nome:focus{
-            background-color:#1f3f42;
-            color:#c8cdc6; 
-            transition:.3s;
-        }
     </style>
 </head>
 <body>
