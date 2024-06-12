@@ -46,7 +46,7 @@
         .form-group input {
             width: 98.7%;
             padding: 0.5rem;
-            border: 1px solid #ced4da;
+            border: 1px solid #1f3f42;
             border-radius: 4px;
             transition: border-color 0.3s;
         }
@@ -54,16 +54,16 @@
         .form-group select {
             width: 100%;
             padding: 0.5rem;
-            border: 1px solid #ced4da;
+            border: 1px solid #1f3f42;
             border-radius: 4px;
             transition: border-color 0.3s;
         }
 
         .form-group input:focus,
         .form-group select:focus {
-            border-color: #80bdff;
+            border-color: #798985;
             outline: 0;
-            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 0.2rem rgba(31, 63, 66, 0.25);
         }
 
         .divTitle{
@@ -78,7 +78,7 @@
             /*coisa nova*/
             font-size: 2rem;
             margin-bottom: 1rem;
-            color: #343a40;
+            color: #7b6f53;
             text-align: center;
         }
 
@@ -88,7 +88,7 @@
             font-size: 1rem;
             font-weight: 600;
             color: #ffffff;
-            background-color: #333;
+            background-color: #1f3f42;
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -98,7 +98,8 @@
         }
 
         .buttonSalvar:hover {
-            background-color: #292929;
+            background-color: #798985;
+            border: none;
         }
 
         .table-container{
