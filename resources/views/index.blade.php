@@ -3,18 +3,18 @@
 @section('conteudo')
 <div class="container">
     <div class="header">
-        <h2 class="title">Pokemons</h2>
+        <h2 class="title">P O K E M O N </h2>
         <a href="/create" class="active-members-link">Criar Novo</a>
     </div>
     <div class="search-sort">
         <form method="GET" action="{{ route('pokemons.index') }}">
-            <input type="text" name="search" class="search-input" placeholder="Search" value="{{ request('search') }}">
+            <input type="text" name="search" class="search-input" placeholder="Search Name" value="{{ request('search') }}">
             <select name="sort" class="sort-select">
-                <option value="">Sort by</option>
+                <option value="">Filter</option>
                 <option value="tipo" {{ request('sort') == 'tipo' ? 'selected' : '' }}>Tipo</option>
                 <option value="regiao" {{ request('sort') == 'regiao' ? 'selected' : '' }}>Região</option>
             </select>
-            <button type="submit" class="sort-button">Sort</button>
+            <button type="submit" class="sort-button">Filter</button>
         </form>
     </div>
     <div class="table-container">
