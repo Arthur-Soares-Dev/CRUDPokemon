@@ -23,13 +23,6 @@
             font-family: "Inter", sans-serif;
         }
 
-        .formBody{
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa;
-        }
-
         .formContainer{
             width: 80%;
             margin: 0 auto;
@@ -50,7 +43,14 @@
             margin-bottom: 0.5rem;
         }
 
-        .form-group input,
+        .form-group input {
+            width: 98.7%;
+            padding: 0.5rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
         .form-group select {
             width: 100%;
             padding: 0.5rem;
@@ -94,7 +94,7 @@
             cursor: pointer;
             transition: background-color 0.3s;
             text-align: center;
-            width: 100%;
+            width: 99.3%;
         }
 
         .buttonSalvar:hover {
@@ -103,36 +103,6 @@
 
         .table-container{
             overflow-x: auto;
-        }
-
-        .form{
-            display:grid;
-            justify-content:center;
-        }
-
-        .select{
-            font-size:1.2rem;
-            margin-bottom:5px;
-            cursor: pointer;
-            transition: .3s;
-            padding-left: 5px;
-        }
-
-        .select:hover{
-            background-color:#1f3f42;
-            color:#c8cdc6;
-            transition: .3s;
-            appearance: none;
-            padding-left: 5px;
-        }
-
-        .select:active{
-            border: 0px;
-        }
-
-        .labelForm{
-            margin-bottom:5px;
-            font-size:1.3rem;
         }
 
     </style>

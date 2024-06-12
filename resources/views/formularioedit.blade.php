@@ -1,23 +1,22 @@
 @extends('layouts.app')
 @section('conteudo')
 
-<div class="formBody">
     <div class="formContainer">
         <h1 class="title">
             <!-- Pokémon, juntos teremos que... -->
             Editar Pokemon
         </h1>
-        <form class="form" action="/update" method="post">
+
+        <form action="/update" method="post">
             @csrf
             <input type="hidden" name="id" value="{{ $reg->id }}">
             @method('PUT')
-                <div class="form-group">
-                <label class="labelForm" for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" value="{{ $reg->nome }}">
+                <div class="form-group"> 
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" value="{{ $reg->nome }}">
                 </div>
-
                 <div class="form-group">
-                    <label class="labelForm" for="tipo">Tipo:</label>
+                    <label for="tipo">Tipo:</label>
                     <select id="tipo" name="tipo">
                         <option value="normal" {{ $reg->tipo == "normal" ? "selected" : "" }}>Normal</option>
                         <option value="fogo" {{ $reg->tipo == "fogo" ? "selected" : "" }}>Fogo</option>
@@ -39,7 +38,7 @@
                         <option value="fada" {{ $reg->tipo == "fada" ? "selected" : "" }}>Fada</option>
                     </select>
                 </div>
-                <div class="form-group"> 
+                <div class="form-group">
                     <label class="labelForm" for="fraqueza">Fraqueza:</label>
                     <select id="fraqueza" name="fraqueza">
                         <option value="normal" {{ $reg->fraqueza == "normal" ? "selected" : "" }}>Normal</option>
@@ -63,7 +62,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label class="labelForm" for="regiao">Região:</label>
+                    <label for="regiao">Região:</label>
                     <select id="regiao" name="regiao">
                         <option value="kanto" {{ $reg->regiao == "kanto" ? "selected" : "" }}>Kanto</option>
                         <option value="johto" {{ $reg->regiao == "johto" ? "selected" : "" }}>Johto</option>
@@ -77,7 +76,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label class="labelForm" for="geracao">Geração:</label>
+                    <label for="geracao">Geração:</label>
                     <select id="geracao" name="geracao">
                         <option value="1" {{ $reg->geracao == "1" ? "selected" : "" }}>Primeira</option>
                         <option value="2" {{ $reg->geracao == "2" ? "selected" : "" }}>Segunda</option>
@@ -90,10 +89,10 @@
                         <option value="9" {{ $reg->geracao == "9" ? "selected" : "" }}>Nona</option>
                     </select>
                 </div>
+
                 <button class="buttonSalvar" type="submit">Editar</button>
-            <!--</p>-->
+      
         </form>
-</div>
 
 <script>
         function validarForm(){
@@ -124,6 +123,7 @@
             if (msgAlerta != "") {
                 alert(msgAlerta);
                 return false;
+            }
         }
         return true;
     </script>
