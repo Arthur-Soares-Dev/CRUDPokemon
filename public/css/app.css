@@ -105,7 +105,7 @@ table.customers-table td {
 }
 
 table.customers-table th {
-    background-color: #333;
+    background-color: #1f3f42;
     color: #fff;
 }
 
@@ -144,7 +144,7 @@ table.customers-table tr:hover {
     background-color: #555;
 }
 
-button, input[type="submit"], .edit-link {
+button, input[type="submit"] {
     color: #fff;
     background-color: #1f3f42;
     border: 1px solid #1f3f42;
@@ -152,12 +152,21 @@ button, input[type="submit"], .edit-link {
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
-    text-decoration: none;
     font-size: 15px;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-button:hover, input[type="submit"]:hover, .edit-link:hover {
+.edit-link{
+    color: #1f3f42;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.edit-link:hover{
+    color: #798985;
+}
+
+button:hover, input[type="submit"]:hover {
     background-color: #798985;
     border: 1px solid #798985;
 }
