@@ -74,6 +74,12 @@
 
         .title{
             font-size:3rem;
+
+            /*coisa nova*/
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #343a40;
+            text-align: center;
         }
 
         .buttonSalvar {
@@ -118,7 +124,6 @@
             transition: .3s;
             appearance: none;
             padding-left: 5px;
-
         }
 
         .select:active{
