@@ -159,11 +159,18 @@ button, input[type="submit"] {
 .edit-link{
     color: #1f3f42;
     font-size: 15px;
-    text-decoration: none;
 }
 
 .edit-link:hover{
     color: #798985;
+}
+
+.edit-svg{
+    fill: #1f3f42;
+}
+
+.edit-svg:hover{
+    fill: #798985;
 }
 
 button:hover, input[type="submit"]:hover {
@@ -173,4 +180,28 @@ button:hover, input[type="submit"]:hover {
 
 form {
     display: inline;
+}
+
+@media screen and (max-width: 900px) {
+    .header .active-members-link {
+        margin-top: 1.5vh;
+        position: relative;
+        width: 7%;
+        height: 2vh;
+    }
+
+    .header .active-members-link span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .header .active-members-link-new{
+        display: none;
+    }
+
+    .sort-button {
+        margin-left: 0px;
+    }
 }
