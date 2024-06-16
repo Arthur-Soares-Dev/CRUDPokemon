@@ -21,8 +21,10 @@
 
         * {
             font-family: "Inter", sans-serif;
+            padding: 0;
+            box-sizing: border-box;
         }
-
+        
         .formContainer{
             width: 80%;
             margin: 0 auto;
@@ -44,7 +46,7 @@
         }
 
         .form-group input {
-            width: 98.7%;
+            width: 100%;
             padding: 0.5rem;
             border: 1px solid #1f3f42;
             border-radius: 4px;
