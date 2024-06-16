@@ -18,46 +18,6 @@ body {
     margin: 20px auto;
 }
 
-.header-header{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    padding: 0px 60px 0px 10px;
-    color: white;
-    background-color: #1f3f42;
-    width: 100%;
-    height: 4vh;
-}
-
-.header-header ul{
-    display: flex;
-    align-items: center;
-}
-
-.header-header ul li{
-    list-style: none;
-    margin-left: 20%;
-    transition: .5s;
-    text-decoration: none;
-    color: white;
-}
-
-.header-header ul li a{
-    transition: .5s;
-    text-decoration: none;
-    color: white;
-}
-
-.header-header ul li a:hover{
-    border-bottom: 1px solid #798985;
-    color: #798985;
-    cursor: pointer;
-    transition: .5s;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -227,23 +187,13 @@ form {
     display: inline;
 }
 
-footer{
-    width: 100%;
-    height: 5vh;
-    position: absolute;
-    right: 0%;
-    text-align: center;
-    border-top: 1px solid #1f3f42;
-    color: #1f3f42;
-    padding: 10px 0px 0px 0px;
-}
-
 @media screen and (max-width: 900px) {
     .header .active-members-link {
         margin-top: 1.5vh;
         position: relative;
-        width: 7%;
-        height: 2vh;
+        width: 8%;
+        height: 3vh;
+        padding: 16px 30px 16px 30px;
     }
 
     .header .active-members-link span {

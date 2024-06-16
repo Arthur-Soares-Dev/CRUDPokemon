@@ -25,6 +25,46 @@
             box-sizing: border-box;
         }
         
+        .header-header{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            padding: 0px 60px 0px 10px;
+            color: white;
+            background-color: #1f3f42;
+            width: 100%;
+            height: 4vh;
+        }
+
+        .header-header ul{
+            display: flex;
+            align-items: center;
+        }
+
+        .header-header ul li{
+            list-style: none;
+            margin-left: 20%;
+            transition: .5s;
+            text-decoration: none;
+            color: white;
+        }
+
+        .header-header ul li a{
+            transition: .5s;
+            text-decoration: none;
+            color: white;
+        }
+
+        .header-header ul li a:hover{
+            border-bottom: 1px solid #798985;
+            color: #798985;
+            cursor: pointer;
+            transition: .5s;
+        }
+
         .formContainer{
             width: 80%;
             margin: 0 auto;
@@ -32,7 +72,7 @@
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-top: 50px;
+            margin-top: 50px
         }
 
         .form-group {
@@ -108,9 +148,27 @@
             overflow-x: auto;
         }
 
+        footer{
+            width: 100%;
+            height: 5vh;
+            right: 0%;
+            bottom: 0;
+            text-align: center;
+            border-top: 1px solid #1f3f42;
+            color: #1f3f42;
+            padding: 10px 0px 10px 0px;
+        }
+
     </style>
 </head>
 <body>
+    <header class="header-header">
+        <span>CRUDPOKEMON</span>
+        <ul>
+            <li><a href="/">INÍCIO</a></li>
+            <li><a href="/create">CRIAR</a></li>
+        </ul>
+    </header>
     @yield('conteudo')
 </body>
 </html>

@@ -2,13 +2,6 @@
 
 @section('conteudo')
 <div class="container">
-    <header class="header-header">
-        <span>CRUDPOKEMON</span>
-        <ul>
-            <li><a href="/">INÍCIO</a></li>
-            <li><a href="/create">CRIAR</a></li>
-        </ul>
-    </header>
     <div class="header">
         <h2 class="title">P O K E M O N </h2>
         <a href="/create" class="active-members-link"><span>Criar</span> <span class="active-members-link-new">Novo</span></a>
