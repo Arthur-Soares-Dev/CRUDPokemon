@@ -159,6 +159,11 @@
             padding: 10px 0px 10px 0px;
         }
 
+        ::selection{
+            background-color: rgba(173,225,245,255);
+            color: white;
+        }
+
     </style>
 </head>
 <body>
