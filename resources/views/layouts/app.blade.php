@@ -168,9 +168,8 @@
 </head>
 <body>
     <header class="header-header">
-        <span>CRUDPOKEMON</span>
         <ul>
-            <li><a href="/">INÍCIO</a></li>
+            <li><a href="/">CRUDPOKEMON</a></li>
             <li><a href="/create">CRIAR</a></li>
         </ul>
     </header>
